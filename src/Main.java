@@ -123,18 +123,18 @@ public class Main {
         System.out.println();
     }
 
-    public static void listGreaterThan50(List<Entry> entries){
+    public static void listGreaterThan50(List<Entry> entries) {
         System.out.println("For Loop:");
-    List<Entry> greaterThan50 = new ArrayList<>();
+        List<Entry> greaterThan50 = new ArrayList<>();
         for (Entry entry : entries) {
-        if(entry.getDuration() > 50)
-            greaterThan50.add(entry);
-    }
+            if (entry.getDuration() > 50)
+                greaterThan50.add(entry);
+        }
         System.out.println(greaterThan50);
         System.out.println("Stream, filter, collect:");
-    greaterThan50 = entries.stream()
-            .filter(entry -> entry.getDuration() > 50)
-            .collect(Collectors.toList());
+        greaterThan50 = entries.stream()
+                .filter(entry -> entry.getDuration() > 50)
+                .collect(Collectors.toList());
         System.out.println(greaterThan50);
         System.out.println();
     }

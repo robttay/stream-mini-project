@@ -31,6 +31,7 @@ public class Entry {
         return "Entry{" +
                 "day=" + day +
                 ", note='" + note + '\'' +
+                ", duration='" + duration + '\'' +
                 '}';
     }
 
